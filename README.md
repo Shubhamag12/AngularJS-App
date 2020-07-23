@@ -29,14 +29,26 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## How to Run:
 1.) Extract the zip file to a suitable folder.
+
 2.) Install angular cli by npm install -g @angular/cli@latest
+
 3.) Install angular material by npm install -g @angular/cli@latest --save
+
 4.) Install cdk by npm install -g @angular/cli@cdk --save
+
 5.) npm install --save @angular/animations@latest
+
 6.) npm install --save hammerjs@latest
+
 7.) npm install --save @angular/flex-layout@latest 
+
 8.) In the main folder, you can see a zip file named database.zip.
+
 9.) In the terminal install json server by npm install json-server -g.
+
 10.) Now go to the json server folder and extract the database.zip file here.
+
 11.) Configure the server by typing json-server --watch db.json -d 2000 from the json-server folder.
+
 12.) Now go to your project location within terminal and apply ng serve --open	
+
