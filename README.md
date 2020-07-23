@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## How to Run:
 1.) Extract the zip file to a suitable folder.
 
-2.) Install angular cli by npm install -g @angular/cli@latest
+2.) Navigate to the project folder and install angular cli by npm install -g @angular/cli@latest
 
 3.) Install angular material by npm install -g @angular/cli@latest --save
 
