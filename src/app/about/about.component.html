@@ -1,0 +1,80 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3>About Us</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Our History</h2>
+        <p>Your history Here: </p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+            <h2>Facts At a Glance</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt>Started</dt>
+              <dd>------------</dd>
+              <dt>Major Stake Holder</dt>
+              <dd>---------------</dd>
+              <dt>Last Year's Turnover</dt>
+              <dd>-------------</dd>
+              <dt>Employees</dt>
+              <dd>---</dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
+  <div fxFlex>
+    <mat-card>
+      <blockquote>
+        <h3>You better cut the pizza in four pieces because
+            I'm not hungry enough to eat six.</h3>
+        <footer>-- Yogi Berra,
+          <cite>The Wit and Wisdom of Yogi Berra,
+            P. Pepe, Diversion Books, 2014</cite>
+        </footer>
+      </blockquote>
+    </mat-card>
+  </div>
+
+
+  <div fxFlex>
+    <h2>Corporate Leadership</h2>
+    <mat-list *ngIf="leaders" [@expand]>
+      <mat-list-item *ngFor="let leader of leaders">
+        <img mat-list-avatar src="{{BaseURL + leader.image}}" alt={{leader.name}}>
+        <p mat-line>
+          <span> {{leader.name}}</span>
+        </p>
+        <p mat-line>
+          <span> {{leader.designation}}</span>
+        </p>
+        <p mat-line>
+          <span> {{leader.description}}</span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div fxFlex [hidden]="leaders || errMess">
+    <mat-spinner></mat-spinner> <h4>Loading . . . Please Wait</h4>
+  </div>
+  <div fxFlex *ngIf = "errMess">
+    <h2>Error</h2>
+    <h4>{{errMess}}</h4>
+  </div>
+</div>
