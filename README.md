@@ -32,6 +32,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 2.) Navigate to the project folder and install angular cli by npm install -g @angular/cli@latest
 
+3.) Run npm install
+
 3.) Install angular material by npm install -g @angular/cli@latest --save
 
 4.) Install cdk by npm install -g @angular/cli@cdk --save
